@@ -30,11 +30,12 @@ const Greeting = () => {
   return(
     <div>
       <Person />
-      <p>This is my message</p>
+      <Message />
     </div>
   );
 };
-
 const Person = () => <h2>Nasim Qureshi</h2>
-
+const Message = () => {
+  return <p>This is nasim's message</p>
+}
 ReactDOM.render(<Greeting />, document.getElementById('root'));
