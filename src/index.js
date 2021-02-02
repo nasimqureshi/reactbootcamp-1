@@ -17,12 +17,24 @@ import ReactDOM from 'react-dom';
  // document.getElementById('root')
 //);
 
+//const Greeting = () => {
+  //return React.createElement(
+    //'div',
+    //{},
+    //React.createElement('h1', {}, 'Hello Nasim')
+ // );
+//};
+//ReactDOM.render(<Greeting />, document.getElementById('root'));
+
 const Greeting = () => {
-  return React.createElement(
-    'div',
-    {},
-    React.createElement('h1', {}, 'Hello Nasim')
+  return(
+    <div>
+      <Person />
+      <p>This is my message</p>
+    </div>
   );
 };
-ReactDOM.render(<Greeting />, document.getElementById('root'));
 
+const Person = () => <h2>Nasim Qureshi</h2>
+
+ReactDOM.render(<Greeting />, document.getElementById('root'));
